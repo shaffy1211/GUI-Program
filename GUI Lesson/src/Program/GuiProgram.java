@@ -6,9 +6,14 @@
 package Program;
 
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 
+import javax.swing.JOptionPane;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import javax.swing.*;
 import java.awt.FlowLayout;
+
+
 /**
  * @author Safkat Khan
  *
@@ -22,6 +27,16 @@ public class GuiProgram {
 		String secondNumber= "";
 		JFrame myWindow = new JFrame("myWindow");
 		myWindow.setLayout(new FlowLayout());
+		//add icon
+				myWindow.setVisible(true);
+				Icon rocket = new ImageIcon(GuiProgram.class.getResource("spring-swing-rocket.png"));
+				
+		//add label
+		JLabel myLabel = new JLabel("My Label", rocket,SwingConstants.LEFT);
+	
+		myLabel.setToolTipText("This is my Label");
+		myLabel.setIcon(rocket);
+		myWindow.add(myLabel);
 		
 		
 		try {
