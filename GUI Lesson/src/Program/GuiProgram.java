@@ -15,7 +15,7 @@ import javax.swing.*;
 
 import java.awt.Color;
 import java.awt.FlowLayout;
-
+import java.awt.*;
 
 /**
  * @author Safkat Khan
@@ -28,7 +28,7 @@ public class GuiProgram {
 	public static void main(String[] args) {
 		
 		JFrame myWindow = new JFrame("myWindow");
-		myWindow.setLayout(new FlowLayout());
+		myWindow.setLayout(new BorderLayout());
 		//add icon
 				myWindow.setVisible(true);
 				Icon rocket = new ImageIcon(GuiProgram.class.getResource("spring-swing-rocket.png"));
@@ -46,6 +46,7 @@ public class GuiProgram {
 		myWindow.add(myTextField);
 		
 		
+		
 		//modify myWindo properties
 		myWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		myWindow.setSize(500,500);
@@ -60,5 +61,4 @@ public class GuiProgram {
 	
 
 	}
-
 }
