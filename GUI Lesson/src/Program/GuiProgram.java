@@ -27,6 +27,9 @@ public class GuiProgram {
 	 */
 	public static void main(String[] args) {
 		
+		MyWindow myWindow = new MyWindow();
+		myWindow.setVisible(true);
+		/*
 		JFrame myWindow = new JFrame("myWindow");
 		myWindow.setLayout(new BorderLayout());
 		//add icon
@@ -54,7 +57,7 @@ public class GuiProgram {
 		myWindow.getContentPane().setBackground(Color.GREEN);
 		myWindow.setLocation(200,200);
 		myWindow.setResizable(true);
-		
+		*/
 
 		
 		
